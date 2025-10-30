@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halloween</title>
+
+  <!-- Llibreries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+
+  <!-- Estils -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Pantalla de càrrega -->
+  <div id="pantallaCarrega">
+    <img src="assets/calavera.png" alt="calavera" class="imatgeLoading">
+    <p class="textLoading">Halloween Day</p>
+    <p id="puntsCarrega" class="textLoading">• • •</p>
+    <button id="botoIniciar" class="botoLoading">Iniciar</button>
+  </div>
+
+  <!-- Interfície principal -->
+  <div id="interficie" style="display:none;">
+    <img src="assets/ratas.png" alt="Decoració Halloween" class="capcaleraImg">
+    <h1>Halloween</h1>
+    <p id="estat">Esperant permís de la càmera...</p>
+    <p id="ajuda" class="textAjuda" style="display:none;">
+      Obre la boca per activar la màgia! Tanca-la per aturar els efectes.
+    </p>
+
+    <!-- Botons per controlar la pluja -->
+    <div id="botonsExtra">
+      <button id="botoCarbasses">Carabasses</button>
+      <button id="botoCalaveres">Calaveres</button>
+      <button id="botoAturaPluja">Atura la pluja</button>
+    </div>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
+
+
